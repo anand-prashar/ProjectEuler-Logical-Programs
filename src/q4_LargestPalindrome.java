@@ -1,9 +1,9 @@
 
-public class q4_LargestPalindrome 
+public class Q4_LargestPalindrome 
 {
 	public static void main(String[] args) 
 	{
-		q4_LargestPalindrome o = new q4_LargestPalindrome();
+		Q4_LargestPalindrome o = new Q4_LargestPalindrome();
 		Timer t=new Timer();
 		o.solution();
 		
