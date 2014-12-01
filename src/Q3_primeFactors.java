@@ -4,10 +4,12 @@ public class Q3_primeFactors
 {
 	public static void main(String[] args) 
 	{
-		long limit= 1000070000;
-					//600851475143L
+		long limit= 17; //600851475143L
 		Q3_primeFactors obj=new Q3_primeFactors();
+		Timer t=new Timer();
+		
 		obj.solution(limit);
+		t.getRunTime();
 	}
 	
 	void solution(long limit)
