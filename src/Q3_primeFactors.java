@@ -32,7 +32,7 @@ public class Q3_primeFactors
 		System.out.println("Largest Prime Divisor="+largestPrimeDiv);
 	}
 
-    private boolean checkPrime(long divident) 
+    boolean checkPrime(long divident) 
 	{
 		int divisorCount=0;
 		
