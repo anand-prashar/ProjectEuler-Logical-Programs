@@ -15,16 +15,16 @@ public class Q4_LargestPalindrome
 	private void solution()
 	{
 		int maxLimit,minLimit,number;
+		int maxpal=0;
 		
 		for(maxLimit=999;maxLimit>=100;maxLimit--)
 			for(minLimit=999;minLimit>=100;minLimit--)
 			{
 				number = maxLimit*minLimit;
-				if(checkPalindrome(number))
+				if(checkPalindrome(number) && number> maxpal)
 				{
 					System.out.println(number+" = "+maxLimit+" x "+minLimit);
-					maxLimit=0;
-					break;
+					maxpal=number;
 				}
 			}
 		
