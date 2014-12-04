@@ -5,10 +5,10 @@ public class Q12_LargeTriangleNumber
 	{
 		Q12_LargeTriangleNumber o =new Q12_LargeTriangleNumber();
 		Timer t=new Timer();
-		o.solution(100);
+		//o.solution(100);
 		
-		t.getRunTime();
-		//System.out.println(o.getFactorCountOf(28));
+		//t.getRunTime();
+		System.out.println(o.getFactorCountOf(28));
 	}
 
     void solution(int expectedNoOfDivisors)
@@ -29,6 +29,7 @@ public class Q12_LargeTriangleNumber
 	private int getFactorCountOf(long triangeNos) 
 	{
 		int noOfDivisor=1;
+		if(triangeNos!=1) noOfDivisor++;  // 1 & self
 		
 		for(int i=2; i<=triangeNos; i++)
 		while(triangeNos%i == 0)
@@ -37,6 +38,6 @@ public class Q12_LargeTriangleNumber
 			noOfDivisor++;
 		}
 		
-		return ++noOfDivisor;
+		return noOfDivisor;
 	}
 }
