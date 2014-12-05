@@ -11,6 +11,11 @@ public class Timer
 	void getRunTime()
 	{
 		endTime = System.currentTimeMillis();
-		System.out.println("\n\n" + (endTime-startTime)+ "- milliseconds Runtime"  );
+		System.out.println( "\n\n"+(endTime-startTime)+ "- milliseconds Runtime"  );
+	}
+	
+	void resetTimer()
+	{
+		startTime = System.currentTimeMillis();
 	}
 }
